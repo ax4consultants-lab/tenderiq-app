@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "1",
+    "source": "AusTender",
+    "tender_id": "CN4234567",
+    "title": "Supply of Medical Equipment for Regional Hospitals",
+    "agency": "Department of Health",
+    "category": "Medical Equipment",
+    "region": "NSW",
+    "open_date": "2025-10-15T00:00:00Z",
+    "close_date": "2025-11-05T17:00:00Z",
+    "status": "Open",
+    "description": "Supply and installation of advanced medical imaging equipment for three regional hospitals in New South Wales.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234567",
+    "provenance": {
+      "fetched_at": "2025-10-30T12:00:00Z",
+      "normalized_at": "2025-10-30T12:05:00Z",
+      "raw_hash": "abc123",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234567"
+    }
+  },
+  {
+    "id": "2",
+    "source": "NSW",
+    "tender_id": "RFT2023-456",
+    "title": "Road Infrastructure Maintenance Services",
+    "agency": "Transport for NSW",
+    "category": "Infrastructure",
+    "region": "NSW",
+    "open_date": "2025-10-20T00:00:00Z",
+    "close_date": "2025-11-02T17:00:00Z",
+    "status": "Open",
+    "description": "Provision of road maintenance and repair services for metro Sydney highways over a 3-year period.",
+    "url": "https://tenders.nsw.gov.au/rft2023-456",
+    "provenance": {
+      "fetched_at": "2025-10-30T13:00:00Z",
+      "normalized_at": "2025-10-30T13:05:00Z",
+      "raw_hash": "def456",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-456"
+    }
+  },
+  {
+    "id": "3",
+    "source": "SA",
+    "tender_id": "SA-2025-789",
+    "title": "Renewable Energy Consulting Services",
+    "agency": "Department for Energy and Mining",
+    "category": "Energy",
+    "region": "SA",
+    "open_date": "2025-10-18T00:00:00Z",
+    "close_date": "2025-11-08T17:00:00Z",
+    "status": "Open",
+    "description": "Expert consulting services to support South Australia's renewable energy transition strategy and implementation.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-789",
+    "provenance": {
+      "fetched_at": "2025-10-30T14:00:00Z",
+      "normalized_at": "2025-10-30T14:05:00Z",
+      "raw_hash": "ghi789",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-789"
+    }
+  },
+  {
+    "id": "4",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678901",
+    "title": "Indigenous Community Development Grant",
+    "agency": "National Indigenous Australians Agency",
+    "category": "Community Development",
+    "region": "NT",
+    "open_date": "2025-10-10T00:00:00Z",
+    "close_date": "2025-11-30T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding for indigenous community-led development projects focused on economic empowerment and cultural preservation.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678901",
+    "provenance": {
+      "fetched_at": "2025-10-30T15:00:00Z",
+      "normalized_at": "2025-10-30T15:05:00Z",
+      "raw_hash": "jkl012",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678901"
+    }
+  },
+  {
+    "id": "5",
+    "source": "AusTender",
+    "tender_id": "CN4234568",
+    "title": "IT Infrastructure Upgrade for Federal Agencies",
+    "agency": "Digital Transformation Agency",
+    "category": "Information Technology",
+    "region": "ACT",
+    "open_date": "2025-10-22T00:00:00Z",
+    "close_date": "2025-11-01T17:00:00Z",
+    "status": "Open",
+    "description": "Comprehensive upgrade of IT infrastructure including servers, networking equipment, and cybersecurity systems.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234568",
+    "provenance": {
+      "fetched_at": "2025-10-30T16:00:00Z",
+      "normalized_at": "2025-10-30T16:05:00Z",
+      "raw_hash": "mno345",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234568"
+    }
+  },
+  {
+    "id": "6",
+    "source": "NSW",
+    "tender_id": "RFT2023-457",
+    "title": "School Building Construction and Refurbishment",
+    "agency": "NSW Department of Education",
+    "category": "Construction",
+    "region": "NSW",
+    "open_date": "2025-09-15T00:00:00Z",
+    "close_date": "2025-10-20T17:00:00Z",
+    "status": "Closed",
+    "description": "Construction of new classroom buildings and refurbishment of existing facilities across 15 schools in Western Sydney.",
+    "url": "https://tenders.nsw.gov.au/rft2023-457",
+    "provenance": {
+      "fetched_at": "2025-10-30T17:00:00Z",
+      "normalized_at": "2025-10-30T17:05:00Z",
+      "raw_hash": "pqr678",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-457"
+    }
+  },
+  {
+    "id": "7",
+    "source": "SA",
+    "tender_id": "SA-2025-790",
+    "title": "Water Management System Implementation",
+    "agency": "SA Water",
+    "category": "Water Infrastructure",
+    "region": "SA",
+    "open_date": "2025-10-25T00:00:00Z",
+    "close_date": "2025-11-04T17:00:00Z",
+    "status": "Open",
+    "description": "Implementation of smart water management systems for improved efficiency and monitoring across Adelaide metropolitan area.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-790",
+    "provenance": {
+      "fetched_at": "2025-10-30T18:00:00Z",
+      "normalized_at": "2025-10-30T18:05:00Z",
+      "raw_hash": "stu901",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-790"
+    }
+  },
+  {
+    "id": "8",
+    "source": "AusTender",
+    "tender_id": "CN4234569",
+    "title": "Defence Communications Equipment Supply",
+    "agency": "Department of Defence",
+    "category": "Defence",
+    "region": "VIC",
+    "open_date": "2025-10-28T00:00:00Z",
+    "close_date": "2025-11-06T17:00:00Z",
+    "status": "Open",
+    "description": "Supply of secure communications equipment for Australian Defence Force operations and training facilities.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234569",
+    "provenance": {
+      "fetched_at": "2025-10-30T19:00:00Z",
+      "normalized_at": "2025-10-30T19:05:00Z",
+      "raw_hash": "vwx234",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234569"
+    }
+  },
+  {
+    "id": "9",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678902",
+    "title": "Regional Tourism Development Initiative",
+    "agency": "Tourism Australia",
+    "category": "Tourism",
+    "region": "QLD",
+    "open_date": "2025-10-12T00:00:00Z",
+    "close_date": "2025-12-15T17:00:00Z",
+    "status": "Open",
+    "description": "Grant program to support regional tourism operators in developing sustainable tourism experiences and infrastructure.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678902",
+    "provenance": {
+      "fetched_at": "2025-10-30T20:00:00Z",
+      "normalized_at": "2025-10-30T20:05:00Z",
+      "raw_hash": "yz0567",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678902"
+    }
+  },
+  {
+    "id": "10",
+    "source": "NSW",
+    "tender_id": "RFT2023-458",
+    "title": "Legal Services Panel Establishment",
+    "agency": "NSW Treasury",
+    "category": "Legal Services",
+    "region": "NSW",
+    "open_date": "2025-08-20T00:00:00Z",
+    "close_date": "2025-09-30T17:00:00Z",
+    "status": "Awarded",
+    "description": "Establishment of a panel of legal service providers for commercial and administrative law matters.",
+    "url": "https://tenders.nsw.gov.au/rft2023-458",
+    "provenance": {
+      "fetched_at": "2025-10-30T21:00:00Z",
+      "normalized_at": "2025-10-30T21:05:00Z",
+      "raw_hash": "abc890",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-458"
+    }
+  },
+  {
+    "id": "11",
+    "source": "SA",
+    "tender_id": "SA-2025-791",
+    "title": "Public Transport Fleet Maintenance",
+    "agency": "Adelaide Metro",
+    "category": "Transport",
+    "region": "SA",
+    "open_date": "2025-10-26T00:00:00Z",
+    "close_date": "2025-11-03T17:00:00Z",
+    "status": "Open",
+    "description": "Maintenance and repair services for Adelaide Metro bus and tram fleet over a 5-year contract period.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-791",
+    "provenance": {
+      "fetched_at": "2025-10-30T22:00:00Z",
+      "normalized_at": "2025-10-30T22:05:00Z",
+      "raw_hash": "def123",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-791"
+    }
+  },
+  {
+    "id": "12",
+    "source": "AusTender",
+    "tender_id": "CN4234570",
+    "title": "Environmental Monitoring Services",
+    "agency": "Department of Climate Change, Energy, the Environment and Water",
+    "category": "Environmental Services",
+    "region": "TAS",
+    "open_date": "2025-10-16T00:00:00Z",
+    "close_date": "2025-11-10T17:00:00Z",
+    "status": "Open",
+    "description": "Comprehensive environmental monitoring services for protected areas and World Heritage sites in Tasmania.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234570",
+    "provenance": {
+      "fetched_at": "2025-10-31T08:00:00Z",
+      "normalized_at": "2025-10-31T08:05:00Z",
+      "raw_hash": "ghi456",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234570"
+    }
+  },
+  {
+    "id": "13",
+    "source": "Other",
+    "tender_id": "WA-LOC-2025-100",
+    "title": "Community Recreation Facility Upgrade",
+    "agency": "City of Perth",
+    "category": "Community Services",
+    "region": "WA",
+    "open_date": "2025-10-19T00:00:00Z",
+    "close_date": "2025-11-07T17:00:00Z",
+    "status": "Open",
+    "description": "Design and construction services for upgrading community recreation facilities including sports courts, playgrounds, and amenities.",
+    "url": "https://www.perth.wa.gov.au/tenders/wa-loc-2025-100",
+    "provenance": {
+      "fetched_at": "2025-10-31T09:00:00Z",
+      "normalized_at": "2025-10-31T09:05:00Z",
+      "raw_hash": "jkl789",
+      "source_url": "https://www.perth.wa.gov.au/tenders/wa-loc-2025-100"
+    }
+  },
+  {
+    "id": "14",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678903",
+    "title": "STEM Education Enhancement Program",
+    "agency": "Department of Education",
+    "category": "Education",
+    "region": "VIC",
+    "open_date": "2025-10-08T00:00:00Z",
+    "close_date": "2025-11-20T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding for schools to enhance STEM education through equipment, teacher training, and curriculum development.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678903",
+    "provenance": {
+      "fetched_at": "2025-10-31T10:00:00Z",
+      "normalized_at": "2025-10-31T10:05:00Z",
+      "raw_hash": "mno012",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678903"
+    }
+  },
+  {
+    "id": "15",
+    "source": "NSW",
+    "tender_id": "RFT2023-459",
+    "title": "Cybersecurity Assessment and Advisory Services",
+    "agency": "NSW Cyber Security NSW",
+    "category": "Cybersecurity",
+    "region": "NSW",
+    "open_date": "2025-10-23T00:00:00Z",
+    "close_date": "2025-11-09T17:00:00Z",
+    "status": "Open",
+    "description": "Provision of cybersecurity assessment, penetration testing, and advisory services for NSW government agencies.",
+    "url": "https://tenders.nsw.gov.au/rft2023-459",
+    "provenance": {
+      "fetched_at": "2025-10-31T11:00:00Z",
+      "normalized_at": "2025-10-31T11:05:00Z",
+      "raw_hash": "pqr345",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-459"
+    }
+  },
+  {
+    "id": "16",
+    "source": "SA",
+    "tender_id": "SA-2025-792",
+    "title": "Healthcare Software System Integration",
+    "agency": "SA Health",
+    "category": "Health IT",
+    "region": "SA",
+    "open_date": "2025-09-28T00:00:00Z",
+    "close_date": "2025-10-25T17:00:00Z",
+    "status": "Closed",
+    "description": "Integration of electronic health record systems across South Australian public hospitals and health services.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-792",
+    "provenance": {
+      "fetched_at": "2025-10-31T12:00:00Z",
+      "normalized_at": "2025-10-31T12:05:00Z",
+      "raw_hash": "stu678",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-792"
+    }
+  },
+  {
+    "id": "17",
+    "source": "AusTender",
+    "tender_id": "CN4234571",
+    "title": "Agricultural Research Equipment Purchase",
+    "agency": "CSIRO",
+    "category": "Research Equipment",
+    "region": "QLD",
+    "open_date": "2025-10-24T00:00:00Z",
+    "close_date": "2025-11-12T17:00:00Z",
+    "status": "Open",
+    "description": "Procurement of advanced agricultural research equipment for climate adaptation and crop improvement studies.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234571",
+    "provenance": {
+      "fetched_at": "2025-10-31T13:00:00Z",
+      "normalized_at": "2025-10-31T13:05:00Z",
+      "raw_hash": "vwx901",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234571"
+    }
+  },
+  {
+    "id": "18",
+    "source": "Other",
+    "tender_id": "VIC-LOC-2025-050",
+    "title": "Waste Management and Recycling Services",
+    "agency": "City of Melbourne",
+    "category": "Waste Management",
+    "region": "VIC",
+    "open_date": "2025-10-14T00:00:00Z",
+    "close_date": "2025-11-15T17:00:00Z",
+    "status": "Open",
+    "description": "Integrated waste collection, recycling, and disposal services for the Melbourne CBD and surrounding suburbs.",
+    "url": "https://www.melbourne.vic.gov.au/tenders/vic-loc-2025-050",
+    "provenance": {
+      "fetched_at": "2025-10-31T14:00:00Z",
+      "normalized_at": "2025-10-31T14:05:00Z",
+      "raw_hash": "yz0234",
+      "source_url": "https://www.melbourne.vic.gov.au/tenders/vic-loc-2025-050"
+    }
+  },
+  {
+    "id": "19",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678904",
+    "title": "Small Business Innovation Fund",
+    "agency": "Department of Industry, Science and Resources",
+    "category": "Business Development",
+    "region": "ACT",
+    "open_date": "2025-10-05T00:00:00Z",
+    "close_date": "2025-12-01T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding to support small business innovation projects focusing on technology adoption and process improvement.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678904",
+    "provenance": {
+      "fetched_at": "2025-10-31T15:00:00Z",
+      "normalized_at": "2025-10-31T15:05:00Z",
+      "raw_hash": "abc567",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678904"
+    }
+  },
+  {
+    "id": "20",
+    "source": "NSW",
+    "tender_id": "RFT2023-460",
+    "title": "Emergency Services Communication System Upgrade",
+    "agency": "Fire and Rescue NSW",
+    "category": "Emergency Services",
+    "region": "NSW",
+    "open_date": "2025-10-21T00:00:00Z",
+    "close_date": "2025-11-11T17:00:00Z",
+    "status": "Open",
+    "description": "Upgrade of radio communication systems for emergency services personnel across New South Wales.",
+    "url": "https://tenders.nsw.gov.au/rft2023-460",
+    "provenance": {
+      "fetched_at": "2025-10-31T16:00:00Z",
+      "normalized_at": "2025-10-31T16:05:00Z",
+      "raw_hash": "def890",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-460"
+    }
+  },
+  {
+    "id": "21",
+    "source": "SA",
+    "tender_id": "SA-2025-793",
+    "title": "Solar Farm Construction and Operation",
+    "agency": "South Australian Government",
+    "category": "Renewable Energy",
+    "region": "SA",
+    "open_date": "2025-09-10T00:00:00Z",
+    "close_date": "2025-10-15T17:00:00Z",
+    "status": "Closed",
+    "description": "Construction and operation of a 200MW solar farm in regional South Australia with battery storage integration.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-793",
+    "provenance": {
+      "fetched_at": "2025-10-31T17:00:00Z",
+      "normalized_at": "2025-10-31T17:05:00Z",
+      "raw_hash": "ghi123",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-793"
+    }
+  },
+  {
+    "id": "22",
+    "source": "AusTender",
+    "tender_id": "CN4234572",
+    "title": "Border Security Technology Implementation",
+    "agency": "Australian Border Force",
+    "category": "Border Security",
+    "region": "NSW",
+    "open_date": "2025-10-27T00:00:00Z",
+    "close_date": "2025-11-13T17:00:00Z",
+    "status": "Open",
+    "description": "Implementation of advanced border security technology including biometric systems and automated processing.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234572",
+    "provenance": {
+      "fetched_at": "2025-10-31T18:00:00Z",
+      "normalized_at": "2025-10-31T18:05:00Z",
+      "raw_hash": "jkl456",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234572"
+    }
+  },
+  {
+    "id": "23",
+    "source": "Other",
+    "tender_id": "QLD-LOC-2025-075",
+    "title": "Beach Restoration and Coastal Protection Works",
+    "agency": "Gold Coast City Council",
+    "category": "Coastal Management",
+    "region": "QLD",
+    "open_date": "2025-10-13T00:00:00Z",
+    "close_date": "2025-11-14T17:00:00Z",
+    "status": "Open",
+    "description": "Beach nourishment and coastal protection infrastructure works along Gold Coast beaches.",
+    "url": "https://www.goldcoast.qld.gov.au/tenders/qld-loc-2025-075",
+    "provenance": {
+      "fetched_at": "2025-10-31T19:00:00Z",
+      "normalized_at": "2025-10-31T19:05:00Z",
+      "raw_hash": "mno789",
+      "source_url": "https://www.goldcoast.qld.gov.au/tenders/qld-loc-2025-075"
+    }
+  },
+  {
+    "id": "24",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678905",
+    "title": "Mental Health Service Expansion Grant",
+    "agency": "Department of Health and Aged Care",
+    "category": "Health Services",
+    "region": "VIC",
+    "open_date": "2025-10-01T00:00:00Z",
+    "close_date": "2025-11-25T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding to expand mental health services in rural and remote areas of Victoria.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678905",
+    "provenance": {
+      "fetched_at": "2025-10-31T20:00:00Z",
+      "normalized_at": "2025-10-31T20:05:00Z",
+      "raw_hash": "pqr012",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678905"
+    }
+  },
+  {
+    "id": "25",
+    "source": "NSW",
+    "tender_id": "RFT2023-461",
+    "title": "Public Housing Maintenance Program",
+    "agency": "NSW Land and Housing Corporation",
+    "category": "Housing",
+    "region": "NSW",
+    "open_date": "2025-10-17T00:00:00Z",
+    "close_date": "2025-11-16T17:00:00Z",
+    "status": "Open",
+    "description": "Comprehensive maintenance and repair program for public housing properties across metropolitan and regional NSW.",
+    "url": "https://tenders.nsw.gov.au/rft2023-461",
+    "provenance": {
+      "fetched_at": "2025-10-31T21:00:00Z",
+      "normalized_at": "2025-10-31T21:05:00Z",
+      "raw_hash": "stu345",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-461"
+    }
+  },
+  {
+    "id": "26",
+    "source": "AusTender",
+    "tender_id": "CN4234573",
+    "title": "Satellite Communication Services",
+    "agency": "Bureau of Meteorology",
+    "category": "Telecommunications",
+    "region": "ACT",
+    "open_date": "2025-08-15T00:00:00Z",
+    "close_date": "2025-09-20T17:00:00Z",
+    "status": "Awarded",
+    "description": "Satellite communication services for weather monitoring and data transmission across Australia and surrounding regions.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234573",
+    "provenance": {
+      "fetched_at": "2025-10-31T22:00:00Z",
+      "normalized_at": "2025-10-31T22:05:00Z",
+      "raw_hash": "vwx678",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234573"
+    }
+  },
+  {
+    "id": "27",
+    "source": "SA",
+    "tender_id": "SA-2025-794",
+    "title": "Cultural Heritage Conservation Services",
+    "agency": "Department for Environment and Water",
+    "category": "Heritage Conservation",
+    "region": "SA",
+    "open_date": "2025-10-29T00:00:00Z",
+    "close_date": "2025-12-05T17:00:00Z",
+    "status": "Open",
+    "description": "Conservation and restoration services for state heritage sites and Aboriginal cultural sites in South Australia.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-794",
+    "provenance": {
+      "fetched_at": "2025-10-31T23:00:00Z",
+      "normalized_at": "2025-10-31T23:05:00Z",
+      "raw_hash": "yz0901",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-794"
+    }
+  },
+  {
+    "id": "28",
+    "source": "Other",
+    "tender_id": "TAS-LOC-2025-030",
+    "title": "Public Library System Upgrade",
+    "agency": "City of Hobart",
+    "category": "Library Services",
+    "region": "TAS",
+    "open_date": "2025-10-11T00:00:00Z",
+    "close_date": "2025-11-18T17:00:00Z",
+    "status": "Open",
+    "description": "Upgrade of public library facilities including digital infrastructure, furniture, and collection management systems.",
+    "url": "https://www.hobartcity.com.au/tenders/tas-loc-2025-030",
+    "provenance": {
+      "fetched_at": "2025-11-01T00:00:00Z",
+      "normalized_at": "2025-11-01T00:05:00Z",
+      "raw_hash": "abc234",
+      "source_url": "https://www.hobartcity.com.au/tenders/tas-loc-2025-030"
+    }
+  },
+  {
+    "id": "29",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678906",
+    "title": "Agricultural Innovation Research Fund",
+    "agency": "Rural Research and Development Corporation",
+    "category": "Agricultural Research",
+    "region": "NSW",
+    "open_date": "2025-09-25T00:00:00Z",
+    "close_date": "2025-11-28T17:00:00Z",
+    "status": "Open",
+    "description": "Research grants for innovative agricultural practices, drought resilience, and sustainable farming methods.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678906",
+    "provenance": {
+      "fetched_at": "2025-11-01T01:00:00Z",
+      "normalized_at": "2025-11-01T01:05:00Z",
+      "raw_hash": "def567",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678906"
+    }
+  },
+  {
+    "id": "30",
+    "source": "NSW",
+    "tender_id": "RFT2023-462",
+    "title": "Park and Recreation Ground Landscaping",
+    "agency": "NSW Office of Sport",
+    "category": "Landscaping",
+    "region": "NSW",
+    "open_date": "2025-10-30T00:00:00Z",
+    "close_date": "2025-12-10T17:00:00Z",
+    "status": "Open",
+    "description": "Landscaping and grounds maintenance for state-owned parks and sporting facilities across New South Wales.",
+    "url": "https://tenders.nsw.gov.au/rft2023-462",
+    "provenance": {
+      "fetched_at": "2025-11-01T02:00:00Z",
+      "normalized_at": "2025-11-01T02:05:00Z",
+      "raw_hash": "ghi890",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-462"
+    }
+  },
+  {
+    "id": "31",
+    "source": "AusTender",
+    "tender_id": "CN4234574",
+    "title": "Aviation Safety Systems Upgrade",
+    "agency": "Civil Aviation Safety Authority",
+    "category": "Aviation",
+    "region": "ACT",
+    "open_date": "2025-10-09T00:00:00Z",
+    "close_date": "2025-11-22T17:00:00Z",
+    "status": "Open",
+    "description": "Upgrade of aviation safety monitoring and reporting systems for improved air traffic management.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234574",
+    "provenance": {
+      "fetched_at": "2025-11-01T03:00:00Z",
+      "normalized_at": "2025-11-01T03:05:00Z",
+      "raw_hash": "jkl123",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234574"
+    }
+  },
+  {
+    "id": "32",
+    "source": "SA",
+    "tender_id": "SA-2025-795",
+    "title": "Aged Care Facility Refurbishment",
+    "agency": "SA Department for Health and Wellbeing",
+    "category": "Healthcare Facilities",
+    "region": "SA",
+    "open_date": "2025-09-05T00:00:00Z",
+    "close_date": "2025-10-10T17:00:00Z",
+    "status": "Closed",
+    "description": "Refurbishment of aged care facilities to meet updated safety and accessibility standards.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-795",
+    "provenance": {
+      "fetched_at": "2025-11-01T04:00:00Z",
+      "normalized_at": "2025-11-01T04:05:00Z",
+      "raw_hash": "mno456",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-795"
+    }
+  },
+  {
+    "id": "33",
+    "source": "Other",
+    "tender_id": "WA-LOC-2025-110",
+    "title": "Smart City Infrastructure Pilot",
+    "agency": "City of Perth",
+    "category": "Smart City",
+    "region": "WA",
+    "open_date": "2025-10-07T00:00:00Z",
+    "close_date": "2025-11-19T17:00:00Z",
+    "status": "Open",
+    "description": "Pilot program for smart city infrastructure including IoT sensors, smart lighting, and traffic management systems.",
+    "url": "https://www.perth.wa.gov.au/tenders/wa-loc-2025-110",
+    "provenance": {
+      "fetched_at": "2025-11-01T05:00:00Z",
+      "normalized_at": "2025-11-01T05:05:00Z",
+      "raw_hash": "pqr789",
+      "source_url": "https://www.perth.wa.gov.au/tenders/wa-loc-2025-110"
+    }
+  },
+  {
+    "id": "34",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678907",
+    "title": "Youth Employment Program Grant",
+    "agency": "Department of Employment and Workplace Relations",
+    "category": "Employment Services",
+    "region": "VIC",
+    "open_date": "2025-10-03T00:00:00Z",
+    "close_date": "2025-12-08T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding for organizations delivering youth employment programs and vocational training.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678907",
+    "provenance": {
+      "fetched_at": "2025-11-01T06:00:00Z",
+      "normalized_at": "2025-11-01T06:05:00Z",
+      "raw_hash": "stu012",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678907"
+    }
+  },
+  {
+    "id": "35",
+    "source": "NSW",
+    "tender_id": "RFT2023-463",
+    "title": "Digital Government Services Platform",
+    "agency": "Service NSW",
+    "category": "Digital Services",
+    "region": "NSW",
+    "open_date": "2025-09-18T00:00:00Z",
+    "close_date": "2025-10-23T17:00:00Z",
+    "status": "Closed",
+    "description": "Development and implementation of an integrated digital services platform for citizen interactions with government.",
+    "url": "https://tenders.nsw.gov.au/rft2023-463",
+    "provenance": {
+      "fetched_at": "2025-11-01T07:00:00Z",
+      "normalized_at": "2025-11-01T07:05:00Z",
+      "raw_hash": "vwx345",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-463"
+    }
+  },
+  {
+    "id": "36",
+    "source": "AusTender",
+    "tender_id": "CN4234575",
+    "title": "Marine Conservation Equipment Supply",
+    "agency": "Department of Climate Change, Energy, the Environment and Water",
+    "category": "Marine Conservation",
+    "region": "QLD",
+    "open_date": "2025-10-06T00:00:00Z",
+    "close_date": "2025-11-21T17:00:00Z",
+    "status": "Open",
+    "description": "Supply of marine conservation equipment for Great Barrier Reef monitoring and protection programs.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234575",
+    "provenance": {
+      "fetched_at": "2025-11-01T08:00:00Z",
+      "normalized_at": "2025-11-01T08:05:00Z",
+      "raw_hash": "yz0678",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234575"
+    }
+  },
+  {
+    "id": "37",
+    "source": "SA",
+    "tender_id": "SA-2025-796",
+    "title": "Film and Media Production Support Services",
+    "agency": "South Australian Film Corporation",
+    "category": "Arts and Culture",
+    "region": "SA",
+    "open_date": "2025-10-04T00:00:00Z",
+    "close_date": "2025-12-03T17:00:00Z",
+    "status": "Open",
+    "description": "Support services for film and media productions including equipment hire, location management, and logistics.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-796",
+    "provenance": {
+      "fetched_at": "2025-11-01T09:00:00Z",
+      "normalized_at": "2025-11-01T09:05:00Z",
+      "raw_hash": "abc901",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-796"
+    }
+  },
+  {
+    "id": "38",
+    "source": "Other",
+    "tender_id": "NT-LOC-2025-015",
+    "title": "Remote Area Power System Installation",
+    "agency": "Northern Territory Government",
+    "category": "Energy Infrastructure",
+    "region": "NT",
+    "open_date": "2025-10-02T00:00:00Z",
+    "close_date": "2025-11-23T17:00:00Z",
+    "status": "Open",
+    "description": "Installation of off-grid power systems for remote communities in the Northern Territory.",
+    "url": "https://ntg.gov.au/tenders/nt-loc-2025-015",
+    "provenance": {
+      "fetched_at": "2025-11-01T10:00:00Z",
+      "normalized_at": "2025-11-01T10:05:00Z",
+      "raw_hash": "def234",
+      "source_url": "https://ntg.gov.au/tenders/nt-loc-2025-015"
+    }
+  },
+  {
+    "id": "39",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678908",
+    "title": "Disability Support Services Enhancement Grant",
+    "agency": "National Disability Insurance Agency",
+    "category": "Disability Services",
+    "region": "ACT",
+    "open_date": "2025-09-22T00:00:00Z",
+    "close_date": "2025-11-26T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding to enhance disability support services and promote community inclusion initiatives.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678908",
+    "provenance": {
+      "fetched_at": "2025-11-01T11:00:00Z",
+      "normalized_at": "2025-11-01T11:05:00Z",
+      "raw_hash": "ghi567",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678908"
+    }
+  },
+  {
+    "id": "40",
+    "source": "NSW",
+    "tender_id": "RFT2023-464",
+    "title": "Court Technology Modernization",
+    "agency": "NSW Department of Communities and Justice",
+    "category": "Justice Technology",
+    "region": "NSW",
+    "open_date": "2025-08-30T00:00:00Z",
+    "close_date": "2025-10-05T17:00:00Z",
+    "status": "Awarded",
+    "description": "Modernization of court technology systems including case management, digital evidence, and virtual hearing capabilities.",
+    "url": "https://tenders.nsw.gov.au/rft2023-464",
+    "provenance": {
+      "fetched_at": "2025-11-01T12:00:00Z",
+      "normalized_at": "2025-11-01T12:05:00Z",
+      "raw_hash": "jkl890",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-464"
+    }
+  },
+  {
+    "id": "41",
+    "source": "AusTender",
+    "tender_id": "CN4234576",
+    "title": "National Security Data Center Services",
+    "agency": "Australian Security Intelligence Organisation",
+    "category": "Data Center",
+    "region": "ACT",
+    "open_date": "2025-07-20T00:00:00Z",
+    "close_date": "2025-08-25T17:00:00Z",
+    "status": "Awarded",
+    "description": "Secure data center services for national security operations and intelligence processing.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234576",
+    "provenance": {
+      "fetched_at": "2025-11-01T13:00:00Z",
+      "normalized_at": "2025-11-01T13:05:00Z",
+      "raw_hash": "mno123",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234576"
+    }
+  },
+  {
+    "id": "42",
+    "source": "SA",
+    "tender_id": "SA-2025-797",
+    "title": "Hospital Equipment Procurement",
+    "agency": "Central Adelaide Local Health Network",
+    "category": "Medical Equipment",
+    "region": "SA",
+    "open_date": "2025-10-31T00:00:00Z",
+    "close_date": "2025-12-12T17:00:00Z",
+    "status": "Open",
+    "description": "Procurement of medical equipment and supplies for Royal Adelaide Hospital and associated facilities.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-797",
+    "provenance": {
+      "fetched_at": "2025-11-01T14:00:00Z",
+      "normalized_at": "2025-11-01T14:05:00Z",
+      "raw_hash": "pqr456",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-797"
+    }
+  },
+  {
+    "id": "43",
+    "source": "Other",
+    "tender_id": "VIC-LOC-2025-060",
+    "title": "Traffic Signal System Upgrade",
+    "agency": "City of Melbourne",
+    "category": "Traffic Management",
+    "region": "VIC",
+    "open_date": "2025-09-12T00:00:00Z",
+    "close_date": "2025-10-18T17:00:00Z",
+    "status": "Closed",
+    "description": "Upgrade of traffic signal systems with adaptive traffic control and integrated pedestrian safety features.",
+    "url": "https://www.melbourne.vic.gov.au/tenders/vic-loc-2025-060",
+    "provenance": {
+      "fetched_at": "2025-11-01T15:00:00Z",
+      "normalized_at": "2025-11-01T15:05:00Z",
+      "raw_hash": "stu789",
+      "source_url": "https://www.melbourne.vic.gov.au/tenders/vic-loc-2025-060"
+    }
+  },
+  {
+    "id": "44",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678909",
+    "title": "Sports Infrastructure Development Grant",
+    "agency": "Australian Sports Commission",
+    "category": "Sports Infrastructure",
+    "region": "QLD",
+    "open_date": "2025-09-15T00:00:00Z",
+    "close_date": "2025-11-29T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding for community sports infrastructure development and facility upgrades.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678909",
+    "provenance": {
+      "fetched_at": "2025-11-01T16:00:00Z",
+      "normalized_at": "2025-11-01T16:05:00Z",
+      "raw_hash": "vwx012",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678909"
+    }
+  },
+  {
+    "id": "45",
+    "source": "NSW",
+    "tender_id": "RFT2023-465",
+    "title": "Climate Change Adaptation Planning Services",
+    "agency": "NSW Department of Planning and Environment",
+    "category": "Environmental Planning",
+    "region": "NSW",
+    "open_date": "2025-10-01T00:00:00Z",
+    "close_date": "2025-11-17T17:00:00Z",
+    "status": "Open",
+    "description": "Professional services for climate change adaptation planning and resilience strategy development.",
+    "url": "https://tenders.nsw.gov.au/rft2023-465",
+    "provenance": {
+      "fetched_at": "2025-11-01T17:00:00Z",
+      "normalized_at": "2025-11-01T17:05:00Z",
+      "raw_hash": "yz0345",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-465"
+    }
+  },
+  {
+    "id": "46",
+    "source": "AusTender",
+    "tender_id": "CN4234577",
+    "title": "National Archive Digitization Project",
+    "agency": "National Archives of Australia",
+    "category": "Digitization Services",
+    "region": "ACT",
+    "open_date": "2025-09-20T00:00:00Z",
+    "close_date": "2025-10-26T17:00:00Z",
+    "status": "Closed",
+    "description": "Large-scale digitization of historical documents and records for the National Archives collection.",
+    "url": "https://www.tenders.gov.au/Cn/Show/cn4234577",
+    "provenance": {
+      "fetched_at": "2025-11-01T18:00:00Z",
+      "normalized_at": "2025-11-01T18:05:00Z",
+      "raw_hash": "abc678",
+      "source_url": "https://www.tenders.gov.au/Cn/Show/cn4234577"
+    }
+  },
+  {
+    "id": "47",
+    "source": "SA",
+    "tender_id": "SA-2025-798",
+    "title": "Indigenous Economic Development Program",
+    "agency": "Aboriginal Affairs and Reconciliation",
+    "category": "Economic Development",
+    "region": "SA",
+    "open_date": "2025-10-12T00:00:00Z",
+    "close_date": "2025-12-07T17:00:00Z",
+    "status": "Open",
+    "description": "Program delivery for indigenous economic development initiatives and business support services.",
+    "url": "https://tenders.sa.gov.au/tender/sa-2025-798",
+    "provenance": {
+      "fetched_at": "2025-11-01T19:00:00Z",
+      "normalized_at": "2025-11-01T19:05:00Z",
+      "raw_hash": "def901",
+      "source_url": "https://tenders.sa.gov.au/tender/sa-2025-798"
+    }
+  },
+  {
+    "id": "48",
+    "source": "Other",
+    "tender_id": "TAS-LOC-2025-040",
+    "title": "Tourism Trail Development and Maintenance",
+    "agency": "Tasmanian Parks and Wildlife Service",
+    "category": "Tourism Infrastructure",
+    "region": "TAS",
+    "open_date": "2025-09-28T00:00:00Z",
+    "close_date": "2025-11-24T17:00:00Z",
+    "status": "Open",
+    "description": "Development and ongoing maintenance of walking trails and tourism infrastructure in Tasmania's national parks.",
+    "url": "https://parks.tas.gov.au/tenders/tas-loc-2025-040",
+    "provenance": {
+      "fetched_at": "2025-11-01T20:00:00Z",
+      "normalized_at": "2025-11-01T20:05:00Z",
+      "raw_hash": "ghi234",
+      "source_url": "https://parks.tas.gov.au/tenders/tas-loc-2025-040"
+    }
+  },
+  {
+    "id": "49",
+    "source": "GrantsConnect",
+    "tender_id": "GO5678910",
+    "title": "Cybersecurity Awareness Program Grant",
+    "agency": "Australian Cyber Security Centre",
+    "category": "Cybersecurity Education",
+    "region": "ACT",
+    "open_date": "2025-10-08T00:00:00Z",
+    "close_date": "2025-12-13T17:00:00Z",
+    "status": "Open",
+    "description": "Grant funding for cybersecurity awareness and education programs targeting small businesses and community organizations.",
+    "url": "https://www.grants.gov.au/Go/Show/go5678910",
+    "provenance": {
+      "fetched_at": "2025-11-01T21:00:00Z",
+      "normalized_at": "2025-11-01T21:05:00Z",
+      "raw_hash": "jkl567",
+      "source_url": "https://www.grants.gov.au/Go/Show/go5678910"
+    }
+  },
+  {
+    "id": "50",
+    "source": "NSW",
+    "tender_id": "RFT2023-466",
+    "title": "Heritage Building Conservation Project",
+    "agency": "Heritage NSW",
+    "category": "Heritage Conservation",
+    "region": "NSW",
+    "open_date": "2025-07-10T00:00:00Z",
+    "close_date": "2025-08-15T17:00:00Z",
+    "status": "Awarded",
+    "description": "Conservation and restoration of state significant heritage buildings in Sydney's historic districts.",
+    "url": "https://tenders.nsw.gov.au/rft2023-466",
+    "provenance": {
+      "fetched_at": "2025-11-01T22:00:00Z",
+      "normalized_at": "2025-11-01T22:05:00Z",
+      "raw_hash": "mno890",
+      "source_url": "https://tenders.nsw.gov.au/rft2023-466"
+    }
+  }
+]
