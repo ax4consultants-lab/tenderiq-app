@@ -2,27 +2,24 @@ import { useState } from "react";
 import { ChevronDown, ChevronUp, Copy, Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
-import { Provenance } from "@/types/tender";
+import { Tender } from "@/types/tender";
 import { formatDate } from "@/lib/utils";
-import { toast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 interface ProvenanceCardProps {
-  provenance: Provenance;
-  rawData?: any;
+  tender: Tender;
 }
 
-export function ProvenanceCard({ provenance, rawData }: ProvenanceCardProps) {
+export function ProvenanceCard({ tender }: ProvenanceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [copied, setCopied] = useState(false);
+  const provenance = tender.provenance;
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(JSON.stringify(rawData || provenance, null, 2));
+    navigator.clipboard.writeText(JSON.stringify(tender, null, 2));
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-    toast({
-      title: "Copied to clipboard",
-      description: "Provenance data copied successfully",
-    });
+    toast.success("Copied to clipboard");
   };
 
   return (
@@ -99,7 +96,7 @@ export function ProvenanceCard({ provenance, rawData }: ProvenanceCardProps) {
               </Button>
             </div>
             <pre className="bg-muted p-4 rounded-md text-xs overflow-auto max-h-96">
-              {JSON.stringify(rawData || provenance, null, 2)}
+              {JSON.stringify(tender, null, 2)}
             </pre>
           </div>
         )}

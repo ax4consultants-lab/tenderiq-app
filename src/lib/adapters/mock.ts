@@ -34,13 +34,15 @@ export class MockAdapter {
 
     // Apply date range filters
     if (filters.close_from) {
+      const fromDate = new Date(filters.close_from);
       filtered = filtered.filter(
-        (t) => t.close_date && t.close_date >= filters.close_from!
+        (t) => t.close_date && new Date(t.close_date) >= fromDate
       );
     }
     if (filters.close_to) {
+      const toDate = new Date(filters.close_to);
       filtered = filtered.filter(
-        (t) => t.close_date && t.close_date <= filters.close_to!
+        (t) => t.close_date && new Date(t.close_date) <= toDate
       );
     }
 
@@ -60,9 +62,9 @@ export class MockAdapter {
       }
 
       if (sortOrder === "asc") {
-        return aVal > bVal ? 1 : -1;
+        return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
       } else {
-        return aVal < bVal ? 1 : -1;
+        return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
       }
     });
 
@@ -87,11 +89,10 @@ export class MockAdapter {
 
   async getKPIs(): Promise<KPIs> {
     const now = new Date();
-    const thirtyDaysAgo = new Date(now);
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-    const sevenDaysFromNow = new Date(now);
-    sevenDaysFromNow.setDate(sevenDaysFromNow.getDate() + 7);
-    const todayStart = new Date(now.setHours(0, 0, 0, 0));
+    const todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0);
+    const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+    const sevenDaysFromNow = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
 
     const total_last_30d = tenders.filter((t) => {
       const openDate = t.open_date ? new Date(t.open_date) : null;
