@@ -103,3 +103,8 @@ export function findRelatedTenders(tender: Tender, allTenders: Tender[], limit =
   
   return scored.map((s) => s.tender);
 }
+
+// Type guard to check if a tender is a Lead
+export function isLead(tender: any): tender is import("@/types/lead").Lead {
+  return 'score' in tender && 'matched_keywords' in tender;
+}

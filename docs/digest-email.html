@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TenderIQ Daily Digest</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .email-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .email-header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .email-header p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .email-body {
+      padding: 30px 20px;
+    }
+    .summary {
+      background-color: #f9fafb;
+      border-left: 4px solid #667eea;
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+    .summary p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #4b5563;
+    }
+    .lead-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: box-shadow 0.2s;
+    }
+    .lead-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .lead-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .lead-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111827;
+      margin: 0;
+      flex: 1;
+    }
+    .lead-score {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 12px;
+    }
+    .score-high {
+      background-color: #d1fae5;
+      color: #065f46;
+    }
+    .score-medium {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+    .score-low {
+      background-color: #f3f4f6;
+      color: #6b7280;
+    }
+    .lead-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .lead-meta span {
+      display: flex;
+      align-items: center;
+    }
+    .lead-meta strong {
+      color: #374151;
+      margin-right: 4px;
+    }
+    .lead-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .keyword-tag {
+      display: inline-block;
+      background-color: #ede9fe;
+      color: #5b21b6;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .lead-rationale {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .lead-action {
+      text-align: center;
+    }
+    .lead-action a {
+      display: inline-block;
+      background-color: #667eea;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+    .lead-action a:hover {
+      background-color: #5568d3;
+    }
+    .email-footer {
+      background-color: #f9fafb;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+    }
+    .email-footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    .email-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media only screen and (max-width: 600px) {
+      .email-container {
+        margin: 10px;
+        border-radius: 0;
+      }
+      .email-header h1 {
+        font-size: 24px;
+      }
+      .lead-header {
+        flex-direction: column;
+      }
+      .lead-score {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+      .lead-meta {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td align="center" style="padding: 20px 0;">
+        <div class="email-container">
+          
+          <!-- Header -->
+          <div class="email-header">
+            <h1>TenderIQ Daily Digest</h1>
+            <p>Your qualified leads for {date}</p>
+          </div>
+          
+          <!-- Body -->
+          <div class="email-body">
+            
+            <!-- Summary -->
+            <div class="summary">
+              <p><strong>Leads Today:</strong> {lead_count}</p>
+              <p><strong>Average Score:</strong> {avg_score}</p>
+              <p><strong>Top Region:</strong> {top_region}</p>
+            </div>
+            
+            <!-- Lead Card (repeat for each lead) -->
+            <div class="lead-card">
+              <div class="lead-header">
+                <h2 class="lead-title">{title}</h2>
+                <span class="lead-score score-high">{score}</span>
+              </div>
+              
+              <div class="lead-meta">
+                <span><strong>Agency:</strong> {agency}</span>
+                <span><strong>Region:</strong> {region}</span>
+                <span><strong>Closes:</strong> {close_date}</span>
+              </div>
+              
+              <div class="lead-keywords">
+                <!-- Repeat for each matched keyword -->
+                <span class="keyword-tag">{keyword}</span>
+                <span class="keyword-tag">clearance</span>
+                <span class="keyword-tag">WHS</span>
+              </div>
+              
+              <div class="lead-rationale">
+                {rationale}
+              </div>
+              
+              <div class="lead-action">
+                <a href="{url}" target="_blank">View Tender</a>
+              </div>
+            </div>
+            
+            <!-- Repeat lead-card for additional leads -->
+            
+          </div>
+          
+          <!-- Footer -->
+          <div class="email-footer">
+            <p>This digest was generated based on your <a href="{settings_url}">Lead Rules</a></p>
+            <p>To update your preferences, visit <a href="{app_url}">TenderIQ Dashboard</a></p>
+            <p style="margin-top: 15px; color: #9ca3af;">
+              &copy; 2025 TenderIQ. All rights reserved.
+            </p>
+          </div>
+          
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

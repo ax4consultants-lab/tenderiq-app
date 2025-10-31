@@ -1,6 +1,6 @@
 import { Tender } from "@/types/tender";
 import { Lead } from "@/types/lead";
-import { formatDate, getDaysUntilClose } from "@/lib/utils";
+import { formatDate, getDaysUntilClose, isLead as isLeadUtil } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,10 +24,7 @@ interface TenderTableProps {
 
 export function TenderTable({ tenders, onRowClick, showScore = false }: TenderTableProps) {
   const navigate = useNavigate();
-
-  const isLead = (tender: Tender | Lead): tender is Lead => {
-    return 'score' in tender;
-  };
+  const isLead = isLeadUtil;
 
   const getStatusVariant = (status: string) => {
     switch (status) {
