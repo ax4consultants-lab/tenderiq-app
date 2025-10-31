@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTenders } from "@/hooks/useTenders";
+import { useAlerts } from "@/hooks/useAlerts";
 import { TenderTable } from "@/components/TenderTable";
 import { FiltersBar } from "@/components/FiltersBar";
 import { ExportButton } from "@/components/ExportButton";
@@ -15,8 +16,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { scoreLeads } from "@/lib/scoring";
 
 export default function Tenders() {
+  const { config } = useAlerts();
   const [filters, setFilters] = useState<TenderFilters>({
     page: 1,
     pageSize: 20,
@@ -25,6 +28,17 @@ export default function Tenders() {
   });
 
   const { data, isLoading } = useTenders(filters);
+
+  const hasRules = config.keywords.length > 0;
+  const leads = data?.data && hasRules
+    ? scoreLeads(data.data, {
+        include_keywords: config.keywords,
+        exclude_keywords: config.exclude,
+        regions: config.regions,
+        min_days_left: config.min_days_left,
+        min_score: 0,
+      })
+    : data?.data ?? [];
 
   const totalPages = data ? Math.ceil(data.total / data.pageSize) : 0;
 
@@ -40,13 +54,13 @@ export default function Tenders() {
     <div className="container mx-auto p-6 space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold">Tenders</h1>
+          <h1 className="text-3xl font-bold">All Matches</h1>
           <p className="text-muted-foreground">
             {data ? `${data.total} tenders found` : "Loading..."}
           </p>
         </div>
-        {data?.data && (
-          <ExportButton data={data.data} filename="tenders-export.csv" />
+        {leads.length > 0 && (
+          <ExportButton data={leads} filename="tenderiq-leads-export.csv" />
         )}
       </div>
 
@@ -54,13 +68,12 @@ export default function Tenders() {
 
       {isLoading ? (
         <LoadingState message="Loading tenders..." />
-      ) : data?.data.length ? (
+      ) : leads.length > 0 ? (
         <>
           <div className="border rounded-lg overflow-hidden">
-            <TenderTable tenders={data.data} />
+            <TenderTable tenders={leads} showScore={hasRules} />
           </div>
 
-          {/* Pagination */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="text-sm text-muted-foreground">Rows per page:</span>
@@ -82,22 +95,22 @@ export default function Tenders() {
 
             <div className="flex items-center gap-2">
               <span className="text-sm text-muted-foreground">
-                Page {data.page} of {totalPages}
+                Page {data?.page ?? 1} of {totalPages}
               </span>
               <div className="flex gap-1">
                 <Button
                   variant="outline"
                   size="icon"
-                  disabled={data.page === 1}
-                  onClick={() => handlePageChange(data.page - 1)}
+                  disabled={data?.page === 1}
+                  onClick={() => handlePageChange((data?.page ?? 1) - 1)}
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
                 <Button
                   variant="outline"
                   size="icon"
-                  disabled={data.page >= totalPages}
-                  onClick={() => handlePageChange(data.page + 1)}
+                  disabled={(data?.page ?? 1) >= totalPages}
+                  onClick={() => handlePageChange((data?.page ?? 1) + 1)}
                 >
                   <ChevronRight className="h-4 w-4" />
                 </Button>

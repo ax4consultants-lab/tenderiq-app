@@ -5,20 +5,26 @@ const ALERTS_KEY = "echotender_alerts";
 
 export interface AlertsConfig {
   keywords: string[];
+  exclude?: string[];
   regions: string[];
   cadence: "daily" | "weekly";
   hour: string;
   minute: string;
   tz: string;
+  min_days_left?: number;
+  min_score?: number;
 }
 
 const defaultConfig: AlertsConfig = {
   keywords: [],
+  exclude: [],
   regions: [],
   cadence: "daily",
   hour: "08",
   minute: "30",
   tz: DEFAULT_TZ,
+  min_days_left: 2,
+  min_score: 50,
 };
 
 export function useAlerts() {

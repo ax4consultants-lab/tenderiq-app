@@ -1,4 +1,5 @@
 import { Tender } from "@/types/tender";
+import { Lead } from "@/types/lead";
 import { formatDate, getDaysUntilClose } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,15 +13,21 @@ import {
 } from "@/components/ui/table";
 import { useNavigate } from "react-router-dom";
 import { SourceLogo } from "./SourceLogo";
+import { LeadScoreBadge } from "./LeadScoreBadge";
 import { ArrowRight } from "lucide-react";
 
 interface TenderTableProps {
-  tenders: Tender[];
-  onRowClick?: (tender: Tender) => void;
+  tenders: Tender[] | Lead[];
+  onRowClick?: (tender: Tender | Lead) => void;
+  showScore?: boolean;
 }
 
-export function TenderTable({ tenders, onRowClick }: TenderTableProps) {
+export function TenderTable({ tenders, onRowClick, showScore = false }: TenderTableProps) {
   const navigate = useNavigate();
+
+  const isLead = (tender: Tender | Lead): tender is Lead => {
+    return 'score' in tender;
+  };
 
   const getStatusVariant = (status: string) => {
     switch (status) {
@@ -60,7 +67,7 @@ export function TenderTable({ tenders, onRowClick }: TenderTableProps) {
     }
   };
 
-  const handleRowClick = (tender: Tender) => {
+  const handleRowClick = (tender: Tender | Lead) => {
     if (onRowClick) {
       onRowClick(tender);
     } else {
@@ -72,57 +79,90 @@ export function TenderTable({ tenders, onRowClick }: TenderTableProps) {
     <Table>
       <TableHeader>
         <TableRow>
+          {showScore && <TableHead className="w-20">Score</TableHead>}
           <TableHead>Title</TableHead>
           <TableHead>Source</TableHead>
           <TableHead>Agency</TableHead>
           <TableHead>Region</TableHead>
           <TableHead>Close Date</TableHead>
+          {showScore && <TableHead>Matched Keywords</TableHead>}
           <TableHead>Status</TableHead>
           <TableHead className="text-right">Action</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {tenders.map((tender) => (
-          <TableRow
-            key={tender.id}
-            className="cursor-pointer hover:bg-muted/50"
-            onClick={() => handleRowClick(tender)}
-          >
-            <TableCell className="font-medium max-w-md">
-              <div className="truncate" title={tender.title}>
-                {tender.title}
-              </div>
-            </TableCell>
-            <TableCell>
-              <div className="flex items-center gap-2">
-                <SourceLogo source={tender.source} />
-                <span className="text-sm">{tender.source}</span>
-              </div>
-            </TableCell>
-            <TableCell className="max-w-xs truncate">
-              {tender.agency || "N/A"}
-            </TableCell>
-            <TableCell>{tender.region || "N/A"}</TableCell>
-            <TableCell>{getCloseDateBadge(tender.close_date)}</TableCell>
-            <TableCell>
-              <Badge variant={getStatusVariant(tender.status)}>
-                {tender.status}
-              </Badge>
-            </TableCell>
-            <TableCell className="text-right">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  navigate(`/app/tenders/${tender.id}`);
-                }}
-              >
-                View <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
-            </TableCell>
-          </TableRow>
-        ))}
+        {tenders.map((tender) => {
+          const lead = isLead(tender) ? tender : null;
+          
+          return (
+            <TableRow
+              key={tender.id}
+              className="cursor-pointer hover:bg-muted/50"
+              onClick={() => handleRowClick(tender)}
+            >
+              {showScore && lead && (
+                <TableCell>
+                  <LeadScoreBadge score={lead.score} />
+                </TableCell>
+              )}
+              <TableCell className="font-medium max-w-md">
+                <div className="truncate" title={tender.title}>
+                  {tender.title}
+                </div>
+              </TableCell>
+              <TableCell>
+                <div className="flex items-center gap-2">
+                  <SourceLogo source={tender.source} />
+                  <span className="text-sm">{tender.source}</span>
+                </div>
+              </TableCell>
+              <TableCell className="max-w-xs truncate">
+                {tender.agency || "N/A"}
+              </TableCell>
+              <TableCell>{tender.region || "N/A"}</TableCell>
+              <TableCell>{getCloseDateBadge(tender.close_date)}</TableCell>
+              {showScore && lead && (
+                <TableCell>
+                  <div className="flex flex-wrap gap-1">
+                    {lead.matched_keywords.length > 0 ? (
+                      <>
+                        {lead.matched_keywords.slice(0, 3).map((kw) => (
+                          <Badge key={kw} variant="outline" className="text-xs">
+                            {kw}
+                          </Badge>
+                        ))}
+                        {lead.matched_keywords.length > 3 && (
+                          <Badge variant="outline" className="text-xs">
+                            +{lead.matched_keywords.length - 3}
+                          </Badge>
+                        )}
+                      </>
+                    ) : (
+                      <span className="text-muted-foreground text-xs">None</span>
+                    )}
+                  </div>
+                </TableCell>
+              )}
+              <TableCell>
+                <Badge variant={getStatusVariant(tender.status)}>
+                  {tender.status}
+                </Badge>
+              </TableCell>
+              <TableCell className="text-right">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/app/tenders/${tender.id}`);
+                  }}
+                >
+                  View <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </TableCell>
+            </TableRow>
+          );
+        })}
       </TableBody>
     </Table>
   );

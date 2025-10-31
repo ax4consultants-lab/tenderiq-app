@@ -100,7 +100,7 @@ export default function Settings() {
       {/* Billing */}
       <Card>
         <CardHeader>
-          <CardTitle>Billing & Subscription</CardTitle>
+          <CardTitle>Lead Delivery Subscription</CardTitle>
           <CardDescription>Manage your subscription plan</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -143,10 +143,10 @@ export default function Settings() {
         </CardContent>
       </Card>
 
-      {/* API Configuration */}
+      {/* Lead Source Configuration */}
       <Card>
         <CardHeader>
-          <CardTitle>API Configuration</CardTitle>
+          <CardTitle>Lead Source Configuration</CardTitle>
           <CardDescription>Configure your data source</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
