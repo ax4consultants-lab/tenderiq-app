@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { activateSubscription } from "@/lib/billing";
 
-const AUTH_KEY = "echotender_auth";
+const AUTH_KEY = "tenderiq_auth";
 
 interface AuthState {
   isAuthenticated: boolean;

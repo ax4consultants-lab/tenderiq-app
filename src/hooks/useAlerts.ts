@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { DEFAULT_TZ } from "@/lib/constants";
 
-const ALERTS_KEY = "echotender_alerts";
+const ALERTS_KEY = "tenderiq_alerts";
 
 export interface AlertsConfig {
   keywords: string[];
