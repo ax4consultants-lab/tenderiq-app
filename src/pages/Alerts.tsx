@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAlerts } from "@/hooks/useAlerts";
+import { useAlerts, type AlertsConfig } from "@/hooks/useAlerts";
 import { useTenders } from "@/hooks/useTenders";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
