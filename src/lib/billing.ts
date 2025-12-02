@@ -1,5 +1,5 @@
 // Mock billing store for demo purposes
-const STORAGE_KEY = "echotender_billing";
+const STORAGE_KEY = "tenderiq_billing";
 
 export interface BillingState {
   activeSubscription: boolean;

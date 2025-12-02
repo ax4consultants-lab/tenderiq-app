@@ -11,6 +11,7 @@ import TenderDetail from "./pages/TenderDetail";
 import Alerts from "./pages/Alerts";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import DigestPreview from "./pages/DigestPreview";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,14 @@ const App = () => (
             element={
               <ProtectedRoute>
                 <Settings />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/app/dev/digest-preview"
+            element={
+              <ProtectedRoute>
+                <DigestPreview />
               </ProtectedRoute>
             }
           />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAlerts } from "@/hooks/useAlerts";
+import { useAlerts, type AlertsConfig } from "@/hooks/useAlerts";
 import { useTenders } from "@/hooks/useTenders";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -20,8 +20,31 @@ import {
 import { toast } from "sonner";
 import { Bell, Send, Settings2 } from "lucide-react";
 import { scoreLeads } from "@/lib/scoring";
+import { buildDigestPayload } from "@/lib/digest";
 
 const REGIONS = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT", "National"];
+
+const AX4_PRESET: AlertsConfig = {
+  keywords: [
+    "asbestos",
+    "hazmat",
+    "clearance",
+    "air monitoring",
+    "WHS",
+    "demolition",
+    "survey",
+    "register",
+    "management plan",
+  ],
+  exclude: ["design", "architect", "legal drafting"],
+  regions: ["SA", "NSW", "VIC"],
+  cadence: "daily" as const,
+  hour: "08",
+  minute: "30",
+  tz: "Australia/Adelaide",
+  min_days_left: 3,
+  min_score: 60,
+};
 
 export default function Alerts() {
   const { config, updateConfig } = useAlerts();
@@ -65,6 +88,13 @@ export default function Alerts() {
       })
     : [];
 
+  const handleLoadPreset = () => {
+    updateConfig(AX4_PRESET);
+    setKeywordInput(AX4_PRESET.keywords.join(", "));
+    setExcludeInput(AX4_PRESET.exclude.join(", "));
+    toast.success("Ax4 hazmat preset loaded");
+  };
+
   const handleSaveKeywords = () => {
     const keywords = keywordInput
       .split(",")
@@ -105,21 +135,7 @@ export default function Alerts() {
 
     setIsSending(true);
     try {
-      const payload = {
-        generated_at: new Date().toISOString(),
-        rules: config,
-        leads: previewLeads.map((lead) => ({
-          id: lead.id,
-          title: lead.title,
-          agency: lead.agency,
-          region: lead.region,
-          close_date: lead.close_date,
-          url: lead.url,
-          score: lead.score,
-          matched_keywords: lead.matched_keywords,
-          rationale: lead.rationale,
-        })),
-      };
+      const payload = buildDigestPayload(config, previewLeads);
 
       const response = await fetch(webhookUrl, {
         method: "POST",
@@ -174,6 +190,16 @@ export default function Alerts() {
               <CardTitle>Keyword Configuration</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
+              <div className="flex flex-wrap items-start justify-between gap-2 rounded-lg border bg-muted/40 p-3">
+                <div className="space-y-1">
+                  <p className="text-sm font-medium">Ax4 asbestos & hazmat preset</p>
+                  <p className="text-xs text-muted-foreground">Quickly load lead rules for the Ax4 hazmat profile.</p>
+                </div>
+                <Button variant="secondary" onClick={handleLoadPreset} size="sm">
+                  Load Ax4 Hazmat Preset
+                </Button>
+              </div>
+
               <div className="space-y-2">
                 <Label htmlFor="keywords">Include Keywords (comma-separated)</Label>
                 <div className="flex gap-2">
