@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { CheckCircle2, XCircle, ExternalLink } from "lucide-react";
+import { CheckCircle2, XCircle, ExternalLink, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Settings() {
   const settings = useSettings();
@@ -215,6 +216,14 @@ export default function Settings() {
               checked={settings.authBypass}
               onCheckedChange={handleToggleAuthBypass}
             />
+          </div>
+          <div className="mt-4 flex justify-end">
+            <Button variant="outline" asChild>
+              <Link to="/app/dev/digest-preview">
+                Digest Preview
+                <ArrowUpRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>

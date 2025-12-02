@@ -50,22 +50,29 @@ export class MockAdapter {
     const sortBy = filters.sortBy || "close_date";
     const sortOrder = filters.sortOrder || "asc";
     filtered.sort((a, b) => {
-      let aVal: any = a[sortBy];
-      let bVal: any = b[sortBy];
+      const getSortValue = (tender: Tender): number | string => {
+        switch (sortBy) {
+          case "title": {
+            return tender.title.toLowerCase();
+          }
+          case "open_date": {
+            return tender.open_date ? new Date(tender.open_date).getTime() : 0;
+          }
+          case "close_date":
+          default: {
+            return tender.close_date ? new Date(tender.close_date).getTime() : 0;
+          }
+        }
+      };
 
-      if (sortBy === "close_date" || sortBy === "open_date") {
-        aVal = aVal ? new Date(aVal).getTime() : 0;
-        bVal = bVal ? new Date(bVal).getTime() : 0;
-      } else {
-        aVal = aVal?.toLowerCase() || "";
-        bVal = bVal?.toLowerCase() || "";
-      }
+      const aVal = getSortValue(a);
+      const bVal = getSortValue(b);
 
       if (sortOrder === "asc") {
         return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
-      } else {
-        return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
       }
+
+      return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
     });
 
     // Pagination

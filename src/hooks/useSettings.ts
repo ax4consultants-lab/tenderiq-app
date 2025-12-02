@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const SETTINGS_KEY = "echotender_settings";
+const SETTINGS_KEY = "tenderiq_settings";
 
 interface Settings {
   useMockAdapter: boolean;
