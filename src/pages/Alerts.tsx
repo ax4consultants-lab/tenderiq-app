@@ -24,7 +24,7 @@ import { buildDigestPayload } from "@/lib/digest";
 
 const REGIONS = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT", "National"];
 
-const AX4_PRESET = {
+const AX4_PRESET: AlertsConfig = {
   keywords: [
     "asbestos",
     "hazmat",
